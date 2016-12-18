@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "irden"
+require "irb"
+
+IRB::WorkSpace.prepend(Irden)
+
+IRB.start(__FILE__)
