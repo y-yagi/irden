@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "irden"
 require "irb"
+require_relative "../lib/irden"
 
 IRB::WorkSpace.prepend(Irden)
 
